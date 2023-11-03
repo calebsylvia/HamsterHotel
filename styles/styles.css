@@ -28,34 +28,61 @@
     border: 2px solid white;
     padding: 2px;
 }
-
+.box-topbot{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
 .pool-bg{
     background-image: url(/assets/hotelMarkupAssets/header.jpg);
-    background-size: cover;
     width: 100%;
     height: 100%;
+    background-position: center;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
 .top-box{
     background-color: #000324;
     opacity: 0.8;
+    width: 50%;
+    height: 50%;
+    background-position: center;
     text-align: center;
-    padding-top: 50px;
-    padding-bottom: 100px;
     color: white;
     font-family: 'Dosis', sans-serif;
-    width: 50%;
+    padding-top: 90px;
+    padding-bottom: 100px;
 }
 
 .top-box h1{
     padding-bottom: 15px;
 }
 
+.award-box{
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+.medals h1{
+    font-family: 'Dosis', sans-serif;
+}
+.medals p{
+    font-family: 'Source Sans 3', sans-serif;
+}
+.medals img{
+    width: 175px;
+    padding-left: 25px;
+}
+@media only screen and (max-width: 768px){
+    .medals {
+        font-size: small;
+    }
+}
+
 .room-box{
     background-image: url(/assets/hotelMarkupAssets/bg2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     height: 50%;
 }
 
@@ -65,51 +92,209 @@
     color: white;
     font-family: 'Dosis', sans-serif;
 }
+.card{
+    border: none;
+}
+
+@media only screen and (max-width: 935px){
+    .resp-bot{
+        padding-bottom: 15px;
+        display: flex;
+        justify-content: center;
+    }
+}
 
 .cards{
     display: flex;
     justify-content: center;
     padding-top: 10px;
+    padding-bottom: 60px;
+}
+.card-text li{
+    font-size: small;
+}
+.card-text{
+    list-style-position: inside;
+    padding-left: 0;
+    margin-left: 0;
+}
+.card-space{
     padding-bottom: 40px;
+}
+
+
+.pack h1{
+    text-align: center;
+    font-family: 'Dosis', sans-serif;
+    padding-top: 50px;
+    padding-bottom: 25px;
+}
+.pack h2{
+    font-family: 'Dosis', sans-serif;
+}
+
+.pack p{
+    font-family: 'Source Sans 3', sans-serif;
+}
+.blue{
+    color: #1F51A8;
+}
+/* .pack-box{
+    border: 2px black solid;
+} */
+.white-box-pack{
+    padding-bottom: 60px;
+}
+@media only screen and (max-width: 768px){
+    .pack {
+        font-size: small;
+    }
 }
 
 
 .amenities{
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     background-image: url(/assets/hotelMarkupAssets/bg.jpg);
     color: white;
     text-align: center;
+    font-family: 'Dosis', sans-serif;
 }
 
 .amenities h1{
     padding-top: 20px;
+}
+.amenities p {
+    padding-bottom: 25px;
+}
+
+.list ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+@media only screen and (max-width: 767px){
+    .amenities h5{
+        font-size: 12px;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    .amenities img{
+        width: 50%;
+    }
+}
+
+.pad-bot{
+    padding-bottom: 100px;
+}
+
+.pad-bot p{
+    padding-bottom: 25px;
+}
+.pad-top img{
+    padding-top: 15px;
 }
 
 .reserve-box{
     color: white;
     background-color: #000324;
     text-align: center;
-    width: 50%;
+    width: 60%;
     height: 50%;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    padding-top: 10px;
 }
 
 .white-box{
     padding-top: 50px;
     padding-bottom: 50px;
 }
-/* .inputs{
-
-} */
-.size{
-    width: 50%;
-    height: 25px;
-    border-radius: 0;
+.reserve-box h3{
+    font-family: 'Dosis', sans-serif;
+    padding-top: 10px;
+}
+label{
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 12px;
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+    .size{
+        width: 75px;
+        height: 25px;
+        border-radius: 0;
+        font-size: 6px;
+        text-align: left;
+    } 
 }
 
-.labels{
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+    .size-two{
+        font-size: 6px !important;
+        width: 80px;
+        height: 25px;
+        border-radius: 0;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    .size, .size-two {
+        width: 100px;
+        height: 25px;
+        border-radius: 0;
+        font-size: 8px;
+        text-align: left;
+    }
+}
+
+@media only screen and (max-width: 767.9px){
+    .size {
+        width: 75px;
+        height: 25px;
+        border-radius: 0;
+        font-size: 6px;
+    }
+}
+
+@media only screen and (max-width: 767.9px){
+    .size-two{
+        width: 75px;
+        height: 25px;
+        border-radius: 0;
+        font-size: 5px !important;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .size {
+        width: 50px;
+        height: 20px;
+        border-radius: 0;
+        font-size: 5px;
+    }
+}
+@media only screen and (max-width: 400px){
+    .size-two{
+        width: 50px;
+        height: 20px;
+        border-radius: 0;
+        font-size: 4px !important;
+    }
+}
+
+@media only screen and (max-width: 700px){
+    .reserve-box {
+        width: 100%;
+    }
+}
+
+.inputs{
     display: flex;
     justify-content: center;
+    padding-bottom: 15px;
+
 }
 
 .foot {
